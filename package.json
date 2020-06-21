@@ -1,0 +1,29 @@
+{
+  "name": "comment_form",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "test": "jest"
+  },
+  "dependencies": {
+    "highcharts": "^8.1.2",
+    "highcharts-react-official": "^3.0.0",
+    "next": "9.4.4",
+    "prettier": "^2.0.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "engines": {
+    "node": "12.18.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.3.0",
+    "jest": "^26.0.1",
+    "react-test-renderer": "^16.13.1"
+  }
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input render correctly 1`] = `
+<div
+  className="Input__InputWrapper-dp988b-0 fvEQab"
+>
+  <label
+    className="Input__Label-dp988b-1 gIdRUa"
+  >
+     
+    What is your name ?
+  </label>
+  <input
+    className="Input-dp988b-2 GJyGP"
+    name="name"
+    placeholder="Name"
+  />
+</div>
+`;

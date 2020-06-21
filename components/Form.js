@@ -1,0 +1,116 @@
+import React from 'react'
+import styled from 'styled-components'
+import useForm from './useForm'
+import validate from './validate'
+import Input from './Input'
+import Rating from './Rating'
+
+const Form = ({ submitComment }) => {
+  const initialValues = {
+    name: '',
+    email: '',
+    rating: '',
+    comment: '',
+    date: '',
+  }
+
+  const submit = () => {
+    submitComment({ ...values })
+    return false
+  }
+
+  const { values, errors, handleChange, handleSubmit } = useForm(
+    initialValues,
+    submit,
+    validate
+  )
+
+  return (
+    <Wrapper onSubmit={handleSubmit} noValidate>
+      <FormTitle>
+        <FormTitleText>Give Us Feedback</FormTitleText>
+        <FormTitleTextSmall>
+          Help us make our service better :)
+        </FormTitleTextSmall>
+      </FormTitle>
+
+      <Input
+        type="text"
+        label="What is your name ?"
+        name="name"
+        placeholder="Name"
+        errorText={errors.name}
+        handleChange={handleChange}
+        value={values.name || ''}
+        required
+      />
+
+      <Input
+        type="text"
+        label="What is your email ?"
+        name="email"
+        placeholder="E-mail"
+        errorText={errors.email}
+        handleChange={handleChange}
+        value={values.email || ''}
+        required
+      />
+
+      <Rating
+        label="Overall, how satisfiedy were you with our service ?"
+        name="rating"
+        errorText={errors.rating}
+        handleChange={handleChange}
+        value={values.rating || ''}
+        required
+      />
+
+      <Input
+        type="textArea"
+        label="Any Feedback ?"
+        name="comment"
+        placeholder="Add your feedback"
+        errorText={errors.comment}
+        handleChange={handleChange}
+        value={values.comment || ''}
+        row={3}
+        required
+      />
+
+      <Button type="submit">Send My Feedback</Button>
+    </Wrapper>
+  )
+}
+
+const Wrapper = styled.form`
+  padding: 48px;
+`
+const FormTitle = styled.div`
+  margin-bottom: 22px;
+`
+const FormTitleText = styled.h1`
+  margin: 0;
+`
+const FormTitleTextSmall = styled.small`
+  color: #6c757d;
+`
+
+const Button = styled.button`
+  background: #fd496d;
+  color: white;
+  font-weight: 500;
+  border: 0;
+  font-size: 18px;
+  padding: 18px;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  transition: background 300ms ease-out;
+  &:hover,
+  &:focus {
+    background: #ed4b8b;
+    outline: none;
+  }
+`
+
+export default Form
