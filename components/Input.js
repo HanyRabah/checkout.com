@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Tooltip from './Tooltip'
+import Tooltip from './ToolTip'
 
 const FormInput = (props) => {
   const {
