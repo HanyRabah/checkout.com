@@ -2,27 +2,27 @@
 
 exports[`Rating render correctly 1`] = `
 <div
-  className="Rating__Container-sc-1g8swq7-0 kaMipu"
+  className="Rating__Container-sc-8fqffi-0 BzQdw"
 >
   <p
-    className="Rating__Label-sc-1g8swq7-1 jQbjEJ"
+    className="Rating__Label-sc-8fqffi-1 iCfwlL"
   >
      
   </p>
   <div
-    className="Rating__RatingContainer-sc-1g8swq7-3 dDDce"
+    className="Rating__RatingContainer-sc-8fqffi-3 eMkkQo"
   >
     <div
-      className="Rating__Star-sc-1g8swq7-4 ccpsEx"
+      className="Rating__Star-sc-8fqffi-4 gIripz"
     >
       <input
-        className="Rating__Radio-sc-1g8swq7-5 khzqxk"
+        className="Rating__Radio-sc-8fqffi-5 cfQPPy"
         name="rating"
         type="radio"
         value={1}
       />
       <svg
-        className="Stars__Star-sc-2wstsu-0 iKBPjE"
+        className="Stars__Star-agauv2-0 htjMpb"
         selected={false}
         viewBox="0 0 36 34"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,16 +34,16 @@ exports[`Rating render correctly 1`] = `
       </svg>
     </div>
     <div
-      className="Rating__Star-sc-1g8swq7-4 ccpsEx"
+      className="Rating__Star-sc-8fqffi-4 gIripz"
     >
       <input
-        className="Rating__Radio-sc-1g8swq7-5 khzqxk"
+        className="Rating__Radio-sc-8fqffi-5 cfQPPy"
         name="rating"
         type="radio"
         value={2}
       />
       <svg
-        className="Stars__Star-sc-2wstsu-0 iKBPjE"
+        className="Stars__Star-agauv2-0 htjMpb"
         selected={false}
         viewBox="0 0 36 34"
         xmlns="http://www.w3.org/2000/svg"
@@ -55,16 +55,16 @@ exports[`Rating render correctly 1`] = `
       </svg>
     </div>
     <div
-      className="Rating__Star-sc-1g8swq7-4 ccpsEx"
+      className="Rating__Star-sc-8fqffi-4 gIripz"
     >
       <input
-        className="Rating__Radio-sc-1g8swq7-5 khzqxk"
+        className="Rating__Radio-sc-8fqffi-5 cfQPPy"
         name="rating"
         type="radio"
         value={3}
       />
       <svg
-        className="Stars__Star-sc-2wstsu-0 iKBPjE"
+        className="Stars__Star-agauv2-0 htjMpb"
         selected={false}
         viewBox="0 0 36 34"
         xmlns="http://www.w3.org/2000/svg"
@@ -76,16 +76,16 @@ exports[`Rating render correctly 1`] = `
       </svg>
     </div>
     <div
-      className="Rating__Star-sc-1g8swq7-4 ccpsEx"
+      className="Rating__Star-sc-8fqffi-4 gIripz"
     >
       <input
-        className="Rating__Radio-sc-1g8swq7-5 khzqxk"
+        className="Rating__Radio-sc-8fqffi-5 cfQPPy"
         name="rating"
         type="radio"
         value={4}
       />
       <svg
-        className="Stars__Star-sc-2wstsu-0 iKBPjE"
+        className="Stars__Star-agauv2-0 htjMpb"
         selected={false}
         viewBox="0 0 36 34"
         xmlns="http://www.w3.org/2000/svg"
@@ -97,16 +97,16 @@ exports[`Rating render correctly 1`] = `
       </svg>
     </div>
     <div
-      className="Rating__Star-sc-1g8swq7-4 ccpsEx"
+      className="Rating__Star-sc-8fqffi-4 gIripz"
     >
       <input
-        className="Rating__Radio-sc-1g8swq7-5 khzqxk"
+        className="Rating__Radio-sc-8fqffi-5 cfQPPy"
         name="rating"
         type="radio"
         value={5}
       />
       <svg
-        className="Stars__Star-sc-2wstsu-0 iKBPjE"
+        className="Stars__Star-agauv2-0 htjMpb"
         selected={false}
         viewBox="0 0 36 34"
         xmlns="http://www.w3.org/2000/svg"

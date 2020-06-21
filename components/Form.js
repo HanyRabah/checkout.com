@@ -26,7 +26,7 @@ const Form = ({ submitComment }) => {
   )
 
   return (
-    <Wrapper onSubmit={handleSubmit} noValidate>
+    <FormWrapper onSubmit={handleSubmit} noValidate  data-testid="form">
       <FormTitle>
         <FormTitleText>Give Us Feedback</FormTitleText>
         <FormTitleTextSmall>
@@ -43,6 +43,7 @@ const Form = ({ submitComment }) => {
         handleChange={handleChange}
         value={values.name || ''}
         required
+        data-testid="name-input"
       />
 
       <Input
@@ -54,6 +55,7 @@ const Form = ({ submitComment }) => {
         handleChange={handleChange}
         value={values.email || ''}
         required
+        data-testid="email-input"
       />
 
       <Rating
@@ -63,6 +65,7 @@ const Form = ({ submitComment }) => {
         handleChange={handleChange}
         value={values.rating || ''}
         required
+        data-testid="rating-input"
       />
 
       <Input
@@ -75,14 +78,15 @@ const Form = ({ submitComment }) => {
         value={values.comment || ''}
         row={3}
         required
+        data-testid="textarea-input"
       />
 
-      <Button type="submit">Send My Feedback</Button>
-    </Wrapper>
+      <Button type="submit" data-testid="submit-form">Send My Feedback</Button>
+    </FormWrapper>
   )
 }
 
-const Wrapper = styled.form`
+const FormWrapper = styled.form`
   padding: 48px;
 `
 const FormTitle = styled.div`

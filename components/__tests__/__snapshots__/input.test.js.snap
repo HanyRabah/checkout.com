@@ -2,18 +2,36 @@
 
 exports[`Input render correctly 1`] = `
 <div
-  className="Input__InputWrapper-dp988b-0 fvEQab"
+  className="Input__InputWrapper-p4pzeo-0 iLsCTM"
 >
   <label
-    className="Input__Label-dp988b-1 gIdRUa"
+    className="Input__Label-p4pzeo-1 inQhSJ"
   >
      
     What is your name ?
   </label>
   <input
-    className="Input-dp988b-2 GJyGP"
+    className="Input-p4pzeo-2 kEMRak"
     name="name"
     placeholder="Name"
+  />
+</div>
+`;
+
+exports[`TextArea render correctly 1`] = `
+<div
+  className="Input__InputWrapper-p4pzeo-0 iLsCTM"
+>
+  <label
+    className="Input__Label-p4pzeo-1 inQhSJ"
+  >
+     
+    Leave your comment
+  </label>
+  <textarea
+    className="Input__TextArea-p4pzeo-3 jXbrWD"
+    name="comment"
+    placeholder="Comments"
   />
 </div>
 `;
