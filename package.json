@@ -1,5 +1,5 @@
 {
-  "name": "comment_form",
+  "name": "comment-form",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -17,9 +17,6 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.1.1"
-  },
-  "engines": {
-    "node": "12.18.0"
   },
   "devDependencies": {
     "@testing-library/react": "^10.3.0",
