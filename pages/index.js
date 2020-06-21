@@ -56,7 +56,7 @@ const CommentArtwork = styled.div`
   width: 40%;
   background: url(/formArtwork.jpg) no-repeat center / contain #f3d083;
   @media only screen and (max-width: 768px) {
-    display:none;
+    display: none;
   }
 `
 

@@ -2,13 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Rating from './Rating'
 
-const Comments = ({ comments }) => {
-  if (!Array.isArray(comments) || !comments.length) {
-    return <Item>No comment, yet :(</Item>
-  }
+const Lists = ({ comments }) => {
   return (
-    <div>
-      <CommentTitle> Users Comments </CommentTitle>
+    <>
+      <CommentTitle>Users Comments</CommentTitle>
       {comments.map((comment, index) => (
         <Item key={index}>
           <div>
@@ -22,7 +19,7 @@ const Comments = ({ comments }) => {
           <Comment>{comment.comment}</Comment>
         </Item>
       ))}
-    </div>
+    </>
   )
 }
 
@@ -83,4 +80,4 @@ const Comment = styled.p`
   padding: 12px;
 `
 
-export default Comments
+export default Lists

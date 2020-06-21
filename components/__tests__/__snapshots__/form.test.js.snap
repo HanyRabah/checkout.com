@@ -37,7 +37,7 @@ exports[`Form render correctly 1`] = `
       What is your name ?
     </label>
     <input
-      className="Input-p4pzeo-2 kEMRak"
+      className="Input__InputField-p4pzeo-2 eiBStY"
       name="name"
       onChange={[Function]}
       placeholder="Name"
@@ -60,7 +60,7 @@ exports[`Form render correctly 1`] = `
       What is your email ?
     </label>
     <input
-      className="Input-p4pzeo-2 kEMRak"
+      className="Input__InputField-p4pzeo-2 eiBStY"
       name="email"
       onChange={[Function]}
       placeholder="E-mail"

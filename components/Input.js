@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Tooltip from './ToolTip'
 
-const FormInput = ({
+const Input = ({
   type,
   label,
   name,
@@ -17,16 +17,7 @@ const FormInput = ({
       <Label>
         {required && <Required title="required">*</Required>} {label}
       </Label>
-      {type === 'text' && (
-        <Input
-          name={name}
-          placeholder={placeholder}
-          isInvalid={errorText}
-          onChange={handleChange}
-          value={value}
-        />
-      )}
-      {type === 'textArea' && (
+      {type === 'textArea' ? (
         <TextArea
           name={name}
           placeholder={placeholder}
@@ -34,6 +25,14 @@ const FormInput = ({
           onChange={handleChange}
           value={value}
           rows={row}
+        />
+      ) : (
+        <InputField
+          name={name}
+          placeholder={placeholder}
+          isInvalid={errorText}
+          onChange={handleChange}
+          value={value}
         />
       )}
       {errorText && <Tooltip text={errorText} />}
@@ -52,7 +51,7 @@ const Label = styled.label`
   font-weight: 600;
 `
 
-const Input = styled.input`
+const InputField = styled.input`
   display: block;
   background: #ececec;
   border-radius: 4px;
@@ -91,4 +90,4 @@ const Required = styled.span`
   color: #fd496d;
 `
 
-export default FormInput
+export default Input
