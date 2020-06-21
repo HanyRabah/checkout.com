@@ -41,3 +41,7 @@ And
 
 
 ## For app Demo Visit: https://checkout-com.vercel.app/
+
+
+## Preview
+![demo](https://user-images.githubusercontent.com/1196069/85235069-2cff3800-b423-11ea-8bb2-9dbeb53307d3.jpg)
