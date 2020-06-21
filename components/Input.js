@@ -64,7 +64,6 @@ const Input = styled.input`
   outline: 0;
   font-size: 14px;
   text-indent: 12px;
-  line-height: 14;
   ${(props) => props.isInvalid && `border: 1px red solid;`}
   &:focus {
     background: #f1f1f1;
