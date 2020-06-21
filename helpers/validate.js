@@ -1,4 +1,4 @@
-export default function validate(values) {
+const validate = (values) => {
   let errors = {}
   if (!values.name) {
     errors.name = 'Name is important!'
@@ -16,3 +16,5 @@ export default function validate(values) {
   }
   return errors
 }
+
+export default validate

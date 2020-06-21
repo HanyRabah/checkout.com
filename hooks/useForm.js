@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import getCurrentDate from '../helpers/getCurrentDate'
 
 const useForm = (initialValues, callback, validate) => {
   const [values, setValues] = useState(initialValues)
@@ -12,10 +13,6 @@ const useForm = (initialValues, callback, validate) => {
     }
   }, [errors])
 
-  const getCurrentDate = () => {
-    const currentDate = new Date()
-    return `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()}`
-  }
   const handleSubmit = (event) => {
     if (event) event.preventDefault()
     // Only validate if the validate function is used

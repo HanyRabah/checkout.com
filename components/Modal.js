@@ -3,8 +3,7 @@ import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { FakeRatings } from '../helpers/fakeRatings'
 
-const Modal = (props) => {
-  const { ratings, className } = props
+const Modal = ({ ratings, className }) => {
   let tmp = {}
   let results = {}
   const [chartData, setChartDate] = useState({
@@ -22,7 +21,7 @@ const Modal = (props) => {
     data.forEach(function (item) {
       var obj = (tmp[item.date] = tmp[item.date] || { count: 0, total: 0 })
       obj.count++
-      obj.total += parseInt(item.rating)
+      obj.total += parseInt(item.rating, 10)
     })
 
     results = Object.entries(tmp).map(function (entry) {
@@ -86,7 +85,7 @@ const Modal = (props) => {
             <div className="modal-footer">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-primary"
                 onClick={fakeTheData}
               >
                 Fake rating data

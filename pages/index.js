@@ -1,7 +1,7 @@
 import { useState } from 'react'
+import styled from 'styled-components'
 import Lists from '../components/Lists'
 import CommentForm from '../components/Form'
-import styled from 'styled-components'
 import Modal from '../components/Modal'
 
 const Home = () => {
@@ -38,7 +38,8 @@ const Container = styled.div`
 const CommentSection = styled.div`
   background: white;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto 24px;
   border-radius: 8px;
   display: flex;
@@ -47,15 +48,22 @@ const CommentSection = styled.div`
 `
 const CommentFormWrapper = styled.div`
   width: 60%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 const CommentArtwork = styled.div`
   width: 40%;
-  background: url(/formArtwork.png) no-repeat center / contain #f3d083;
+  background: url(/formArtwork.jpg) no-repeat center / contain #f3d083;
+  @media only screen and (max-width: 768px) {
+    display:none;
+  }
 `
 
 const CommentsListWrapper = styled.div`
   background: white;
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
   margin: 0px auto;
   display: block;
   padding: 24px;

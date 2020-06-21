@@ -1,19 +1,17 @@
 import styled from 'styled-components'
 import Tooltip from './ToolTip'
 
-const FormInput = (props) => {
-  const {
-    type,
-    label,
-    name,
-    placeholder,
-    errorText,
-    handleChange,
-    value,
-    row,
-    required,
-  } = props
-
+const FormInput = ({
+  type,
+  label,
+  name,
+  placeholder,
+  errorText,
+  handleChange,
+  value,
+  row,
+  required,
+}) => {
   return (
     <InputWrapper>
       <Label>

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "pretty": "prettier --write \"./(?!.next)**/*.{js,jsx,json}\"",
     "test": "jest"
   },
   "dependencies": {
@@ -25,6 +25,8 @@
     "react-test-renderer": "^16.13.1"
   },
   "jest": {
-    "setupFiles": ["jest-canvas-mock"]
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
   }
 }

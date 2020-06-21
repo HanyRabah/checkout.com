@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import useForm from './useForm'
-import validate from './validate'
 import Input from './Input'
 import Rating from './Rating'
+import useForm from '../hooks/useForm'
+import validate from '../helpers/validate'
 
 const Form = ({ submitComment }) => {
   const initialValues = {
@@ -14,19 +14,18 @@ const Form = ({ submitComment }) => {
     date: '',
   }
 
-  const submit = () => {
+  const submitForm = () => {
     submitComment({ ...values })
-    return false
   }
 
   const { values, errors, handleChange, handleSubmit } = useForm(
     initialValues,
-    submit,
-    validate
+    submitForm,
+    validate,
   )
 
   return (
-    <FormWrapper onSubmit={handleSubmit} noValidate  data-testid="form">
+    <FormWrapper onSubmit={handleSubmit} noValidate data-testid="form">
       <FormTitle>
         <FormTitleText>Give Us Feedback</FormTitleText>
         <FormTitleTextSmall>
@@ -81,7 +80,9 @@ const Form = ({ submitComment }) => {
         data-testid="textarea-input"
       />
 
-      <Button type="submit" data-testid="submit-form">Send My Feedback</Button>
+      <Button type="submit" data-testid="submit-form">
+        Send My Feedback
+      </Button>
     </FormWrapper>
   )
 }

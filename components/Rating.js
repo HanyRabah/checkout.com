@@ -2,18 +2,16 @@ import styled from 'styled-components'
 import Stars from './Stars'
 import Tooltip from './ToolTip'
 
-const Rating = (props) => {
-  const {
-    label,
-    value,
-    handleChange,
-    errorText,
-    stars,
-    readOnly,
-    required,
-  } = props
+const Rating = ({
+  label,
+  value,
+  handleChange,
+  errorText,
+  stars,
+  readOnly,
+  required,
+}) => {
   const totalStars = stars ? stars : 5
-
   return (
     <Container>
       <Label>
