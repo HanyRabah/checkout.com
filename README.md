@@ -31,21 +31,33 @@ yarn test
 
 ## Tech Used
 
-[Next.js]
-[React]
-[Jest]
-[highcharts]
-[styled-component]
-And 
-[Vercel Platform] to deploy the app
+- Next.js
+- React
+- Jest
+- highcharts
+- styled-component
+- Vercel - to deploy the app
 
 
-## For app Demo Visit: https://checkout-com.vercel.app/
+## For app Demo Visit: 
+https://checkout-com.vercel.app/
 
 ## Future Enhancement 
 - Better Animation for comment list 
 - Loading for comment submit & success message
 - Localstorage or Firebase Storage
+- Better Responsive for mobile
+- CSS Grid System and UI 
+- Better SVG import 
+
+## for Graph 
+To see the graph over days as I Added a button to click on it called
+"Fake Rating Data" on Graph Modal if you want to see how the graph can look just click on it
+![Graph Demo](https://user-images.githubusercontent.com/1196069/85264677-176d2b00-b482-11ea-8b70-105db6a583fc.png)
+
+
+## Notes
+Next Js is might be overkill in small application, as I prefer to go with it in bigger SPA
 
 
 
