@@ -42,6 +42,12 @@ And
 
 ## For app Demo Visit: https://checkout-com.vercel.app/
 
+## Future Enhancement 
+- Better Animation for comment list 
+- Loading for comment submit & success message
+- Localstorage or Firebase Storage
+
+
 
 ## Preview
 ![demo](https://user-images.githubusercontent.com/1196069/85235069-2cff3800-b423-11ea-8bb2-9dbeb53307d3.jpg)
