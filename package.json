@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "highcharts": "^8.1.2",
+    "highcharts": "^9.0.0",
     "highcharts-react-official": "^3.0.0",
     "next": "9.4.4",
     "prettier": "^2.0.5",
